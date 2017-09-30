@@ -2,19 +2,17 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files=".bash_profile .zshrc"
+files=".zshrc"
 
-# Create a dir to move the configuration files there
-rm -ri $olddir
 mkdir -p $olddir
 
+# Create a dir to move the configuration files there
 cd $dir
 
 for file in $files; do
-    mv ~/$file ~/$olddir/
+    mv ~/$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
 
-source ~/.bash_profile
 source ~/.zshrc
