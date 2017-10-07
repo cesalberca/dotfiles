@@ -7,6 +7,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export EDITOR="/usr/local/Cellar/micro/1.3.3/bin/micro"
 
 mkdir -p ~/.nvm
 export NVM_DIR="$HOME/.nvm"
