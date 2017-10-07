@@ -22,6 +22,9 @@ curl -o ~/Library/Fonts/Meslo\ LG\ M\ Regular\ for\ Powerline.ttf https://github
 # Create hushlogin
 touch ~/.hushlogin
 
+# Change MacOS configuration
+source .macos
+
 # Configure profile
 dir=~/dotfiles
 files=".zshrc"
