@@ -59,6 +59,3 @@ defaults write com.apple.screencapture location ~/Pictures/Screenshots
 
 # Enable dark mode using cmd + ctrl + alt + T
 sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
-
-# Use white text for desktop icons:
-defaults write com.apple.finder Desktop.HasDarkBackground -boolean
