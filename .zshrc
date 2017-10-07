@@ -8,6 +8,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+mkdir -p ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 # Aliases
 alias gl="git log --all --decorate --oneline --graph"
 alias gs="git status"
