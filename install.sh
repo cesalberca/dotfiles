@@ -27,7 +27,7 @@ source .macos
 
 # Configure profile
 dir=~/dotfiles
-files=".zshrc"
+files=".zshrc .gitconfig"
 
 # Create a dir to move the configuration files there
 cd $dir
