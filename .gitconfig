@@ -1,3 +1,6 @@
 [user]
 name = César Alberca
 email = cesalberca@gmail.com
+[alias]
+c = commit -m
+a = add
