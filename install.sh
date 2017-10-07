@@ -13,6 +13,15 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 # Change default shell
 chsh -s /bin/zsh
 
+# Install Powerlevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+# Download meslo font
+curl -o ~/Library/Fonts/Meslo\ LG\ M\ Regular\ for\ Powerline.ttf https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf
+
+# Create hushlogin
+touch ~/.hushlogin
+
 # Configure profile
 dir=~/dotfiles
 files=".zshrc"
