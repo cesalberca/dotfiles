@@ -25,3 +25,7 @@ trash () { command mv "$@" ~/.Trash; }
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias work="cd ~/Workspace"
 alias tmp="cd ~/Tmp"
+
+# Disable sharing history in iTerm2
+unsetopt inc_append_history
+unsetopt share_history
