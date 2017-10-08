@@ -19,6 +19,14 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 # Download meslo font
 curl -o ~/Library/Fonts/Meslo\ LG\ M\ Regular\ for\ Powerline.ttf https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf
 
+# Install VSCode extensions
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension eg2.tslint 
+code --install-extension eg2.vscode-npm-script 
+code --install-extension EditorConfig.editorconfig 
+code --install-extension esbenp.prettier-vscode 
+code --install-extension octref.vetur 
+
 # Create hushlogin
 touch ~/.hushlogin
 
