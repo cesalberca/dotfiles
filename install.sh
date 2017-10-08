@@ -27,6 +27,10 @@ code --install-extension EditorConfig.editorconfig
 code --install-extension esbenp.prettier-vscode 
 code --install-extension octref.vetur 
 
+# Configure iTerm2 profile
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 # Create hushlogin
 touch ~/.hushlogin
 
