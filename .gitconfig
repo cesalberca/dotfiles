@@ -1,6 +1,8 @@
 [user]
-name = César Alberca
-email = cesalberca@gmail.com
+    name = César Alberca
+    email = cesalberca@gmail.com
 [alias]
-c = commit -m
-a = add
+    c = commit -m
+    a = add
+[url "https://github.com/"]
+    insteadOf = gh:
