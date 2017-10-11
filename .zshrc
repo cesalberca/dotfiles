@@ -29,3 +29,6 @@ alias tmp="cd ~/Tmp"
 # Disable sharing history in iTerm2
 unsetopt inc_append_history
 unsetopt share_history
+
+# Configure Z
+. /usr/local/etc/profile.d/z.sh
