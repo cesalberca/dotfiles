@@ -49,4 +49,7 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
+# Install sdkman
+curl -s "https://get.sdkman.io" | bash
+
 source ~/.zshrc
