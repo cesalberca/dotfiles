@@ -32,3 +32,9 @@ unsetopt share_history
 
 # Configure Z
 . /usr/local/etc/profile.d/z.sh
+
+# Install sdkman
+curl -s "https://get.sdkman.io" | bash
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/calberca/.sdkman"
+[[ -s "/Users/calberca/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/calberca/.sdkman/bin/sdkman-init.sh"
