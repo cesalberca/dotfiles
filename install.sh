@@ -26,6 +26,7 @@ code --install-extension eg2.vscode-npm-script
 code --install-extension EditorConfig.editorconfig 
 code --install-extension esbenp.prettier-vscode 
 code --install-extension octref.vetur 
+code --install-extension EditorConfig.editorconfig 
 
 # Configure iTerm2 profile
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
