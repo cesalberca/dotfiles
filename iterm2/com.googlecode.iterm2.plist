@@ -32,10 +32,6 @@
 	<true/>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/dotfiles/iterm2</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -68,13 +64,11 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>0 113 1680 780 0 0 1680 1027 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 476 620 392 0 0 1680 1027 </string>
+	<string>563 320 923 480 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>252 455 918 512 0 0 1680 1050 </string>
+	<string>44 480 918 394 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>252 167 1170 707 0 0 1680 1050 </string>
+	<string>602 415 570 352 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -659,7 +653,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGMForPowerline-Regular 14</string>
+			<string>MesloLGLDZ-RegularForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1320,13 +1314,9 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>7E3CC89E-ED8F-404D-AF51-F226032D83AF</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<string>37DC5C71-641B-45A8-B12C-DA94CE8FB58F</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>529070716.19152302</real>
+	<real>530198036.49018902</real>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1361,19 +1351,17 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/calberca/dotfiles/iterm2</string>
-	<key>SUAutomaticallyUpdate</key>
-	<true/>
+	<string>~/dotfiles/iterm2</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=65</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=0</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-08T15:00:56Z</date>
+	<date>2017-10-20T13:15:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
