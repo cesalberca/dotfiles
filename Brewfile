@@ -10,6 +10,8 @@ cask "docker"
 cask "virtualbox"
 cask "slack"
 cask "gas-mask"
+tap caskroom/fonts
+cask "font-meslo-for-powerline"
 brew "git"
 brew "nvm"
 brew "yarn"
