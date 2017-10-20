@@ -35,6 +35,9 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 # Create hushlogin
 touch ~/.hushlogin
 
+# Configure fzf and install keybidings
+$(brew --prefix)/opt/fzf/install
+
 # Change MacOS configuration
 source .macos
 

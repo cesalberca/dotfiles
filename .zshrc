@@ -36,3 +36,6 @@ unsetopt share_history
 # Configure sdkman
 export SDKMAN_DIR="/Users/calberca/.sdkman"
 [[ -s "/Users/calberca/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/calberca/.sdkman/bin/sdkman-init.sh"
+
+# Source fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
