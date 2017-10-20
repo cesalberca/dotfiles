@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 
 # Install Hombrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -50,7 +51,7 @@ cd $dir
 
 for file in $files; do
     echo "Creating symlink to $file in home directory."
-    rm ~/$file
+    [ -e ~/$file ] && rm ~/$file
     ln -s $dir/$file ~/$file
 done
 
