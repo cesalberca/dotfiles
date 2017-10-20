@@ -11,9 +11,6 @@ open -a Hammerspoon
 # Use hammerspoon configuration
 curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf06aa9c10b3cfa648284e2ffb7d09c2/raw/31d238ee7b47d06e6cb01f1a803636a2c2a300a4/init.lua
 
-# Install Powerlevel9k theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
 # Install VSCode extensions
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension eg2.tslint 
@@ -38,6 +35,9 @@ curl -s "https://get.sdkman.io" | bash
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Install Powerlevel9k theme
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # Change default shell
 chsh -s /bin/zsh
