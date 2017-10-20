@@ -34,8 +34,8 @@ unsetopt share_history
 . /usr/local/etc/profile.d/z.sh
 
 # Configure sdkman
-export SDKMAN_DIR="/Users/calberca/.sdkman"
-[[ -s "/Users/calberca/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/calberca/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR=$HOME/.sdkman
+[[ -s $HOME/.sdkman/bin/sdkman-init.sh ]] && source $HOME/.sdkman/bin/sdkman-init.sh
 
 # Source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
