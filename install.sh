@@ -13,12 +13,12 @@ curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf
 
 # Install VSCode extensions
 code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension eg2.tslint 
-code --install-extension eg2.vscode-npm-script 
-code --install-extension EditorConfig.editorconfig 
-code --install-extension esbenp.prettier-vscode 
-code --install-extension octref.vetur 
-code --install-extension EditorConfig.editorconfig 
+code --install-extension eg2.tslint
+code --install-extension eg2.vscode-npm-script
+code --install-extension EditorConfig.editorconfig
+code --install-extension esbenp.prettier-vscode
+code --install-extension octref.vetur
+code --install-extension EditorConfig.editorconfig
 
 # Configure iTerm2 profile
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
