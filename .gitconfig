@@ -1,8 +1,18 @@
 [user]
-    name = César Alberca
-    email = cesalberca@gmail.com
+  name = César Alberca
+	email = cesalberca@gmail.com
 [alias]
     c = commit -m
     a = add
 [url "https://github.com/"]
     insteadOf = gh:
+[core]
+	excludesfile = /Users/calberca/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/calberca/.stCommitMsg
