@@ -4,6 +4,8 @@
 [alias]
     c = commit -m
     a = add
+    p = push
+    f = fetch
 [url "https://github.com/"]
     insteadOf = gh:
 [core]
