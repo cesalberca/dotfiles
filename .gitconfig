@@ -1,12 +1,13 @@
 [user]
-  name = César Alberca
+	name = César Alberca
 	email = cesalberca@gmail.com
 [alias]
-    c = commit -m
-    a = add
-    p = pull
-    d = push
-    f = fetch
+  c = commit -m
+  ch = checkout
+  a = add
+  p = pull
+  d = push
+  f = fetch
 [url "https://github.com/"]
     insteadOf = gh:
 [core]
@@ -14,9 +15,15 @@
 	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
 	template = /Users/calberca/.stCommitMsg
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+	mergeoptions = --no-ff
+[pull]
+	ff = true

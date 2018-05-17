@@ -6,7 +6,7 @@ plugins=(git yarn)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/python@2/bin:$PATH"
 export EDITOR="/usr/local/Cellar/micro/1.3.3/bin/micro"
 
 mkdir -p ~/.nvm
@@ -26,6 +26,14 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 alias work="cd ~/Workspace"
 alias tmp="cd ~/Tmp"
 
+# Functions
+gif_opt () {
+	mkdir min;
+	for f in *.gif; do
+		gifsicle --resize-fit-width $1 -i "$f" > "min/${f%.gif}.gif"
+	done;
+} 
+
 # Disable sharing history in iTerm2
 unsetopt inc_append_history
 unsetopt share_history
@@ -42,3 +50,7 @@ export SDKMAN_DIR=$HOME/.sdkman
 
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+. ~/.private-profile
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
