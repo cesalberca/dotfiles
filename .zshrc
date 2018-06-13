@@ -2,6 +2,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+
 plugins=(git yarn)
 
 source $ZSH/oh-my-zsh.sh
