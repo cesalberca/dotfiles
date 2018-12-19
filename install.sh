@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su
 
 # Install Hombrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,10 +11,6 @@ open -a Hammerspoon
 curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf06aa9c10b3cfa648284e2ffb7d09c2/raw/31d238ee7b47d06e6cb01f1a803636a2c2a300a4/init.lua
 
 # Install VSCode extensions
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension eg2.tslint
-code --install-extension eg2.vscode-npm-script
-code --install-extension EditorConfig.editorconfig
 code --install-extension esbenp.prettier-vscode
 code --install-extension octref.vetur
 code --install-extension EditorConfig.editorconfig
@@ -32,15 +27,13 @@ $(brew --prefix)/opt/fzf/install
 
 # Install sdkman
 curl -s "https://get.sdkman.io" | bash
+source "/Users/cesaralberca/.sdkman/bin/sdkman-init.sh"
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Powerlevel9k theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-# Change default shell
-chsh -s /bin/zsh
 
 # Configure profile
 dir=~/dotfiles
@@ -57,3 +50,10 @@ done
 
 # Change MacOS configuration
 source .macos
+
+# Create private-profile
+cd ~
+touch .private-profile
+
+# Change default shell
+chsh -s /bin/zsh
