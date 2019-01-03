@@ -4,7 +4,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 
-plugins=(git yarn)
+plugins=(git yarn zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,7 +34,7 @@ gif_opt () {
 	for f in *.gif; do
 		gifsicle --resize-fit-width $1 -i "$f" > "min/${f%.gif}.gif"
 	done;
-} 
+}
 
 # Disable sharing history in iTerm2
 unsetopt inc_append_history
