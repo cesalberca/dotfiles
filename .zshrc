@@ -53,6 +53,9 @@ export SDKMAN_DIR=$HOME/.sdkman
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Source webstorm
+alias webstorm="~/webstorm"
+
 . ~/.private-profile
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
