@@ -11,10 +11,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/python@2/bin:$PATH"
 export EDITOR="/usr/local/Cellar/micro/1.3.3/bin/micro"
 
-mkdir -p ~/.nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # Aliases
 alias gl="git log --all --decorate --oneline --graph"
 alias gs="git status"
@@ -58,4 +54,6 @@ alias webstorm="~/webstorm"
 
 . ~/.private-profile
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
