@@ -37,7 +37,7 @@ unsetopt inc_append_history
 unsetopt share_history
 
 # Configure Z
-. /usr/local/etc/profile.d/z.sh
+source /usr/local/etc/profile.d/z.sh
 
 # Configure sdkman
 export SDKMAN_DIR=$HOME/.sdkman
@@ -52,7 +52,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Source webstorm
 alias webstorm="~/webstorm"
 
-. ~/.private-profile
+source ~/.private-profile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
