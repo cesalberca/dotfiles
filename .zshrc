@@ -9,7 +9,7 @@ plugins=(git yarn zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/python@2/bin:$PATH"
-export EDITOR="/usr/local/Cellar/micro/1.3.3/bin/micro"
+export EDITOR="//usr/local/Cellar/micro/1.4.1/bin/micro"
 
 # Aliases
 alias gl="git log --all --decorate --oneline --graph"
