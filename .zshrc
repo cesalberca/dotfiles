@@ -52,6 +52,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Source webstorm
 alias webstorm="~/webstorm"
 
+# IP
+alias ip=ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
