@@ -12,7 +12,6 @@ curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf
 
 # Install VSCode extensions
 code --install-extension esbenp.prettier-vscode
-code --install-extension octref.vetur
 code --install-extension EditorConfig.editorconfig
 
 # Configure iTerm2 profile

@@ -23,6 +23,7 @@ trash () { command mv "$@" ~/.Trash; }
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias work="cd ~/Workspace"
 alias tmp="cd ~/Tmp"
+alias typora="open -a typora"
 
 # Functions
 gif_opt () {
