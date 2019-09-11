@@ -39,7 +39,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # Configure profile
 dir=~/dotfiles
-files=".zshrc .gitconfig .p10k"
+files=".zshrc .gitconfig .p10k.zsh"
 
 # Create a dir to move the configuration files there
 cd $dir
