@@ -1,10 +1,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME=powerlevel10k/powerlevel10k
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-
-plugins=(git yarn zsh-autosuggestions)
+plugins=(git npm yarn zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,3 +57,6 @@ alias ip=ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh

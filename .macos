@@ -1,8 +1,9 @@
-# Wait less for Keyboard repeat
-defaults write -g InitialKeyRepeat -int 10
+# System Preferences > Keyboard >
+defaults write NSGlobalDomain KeyRepeat -int 4
 
-# Make keyboard repeat faster
-defaults write -g KeyRepeat -int 1
+# System Preferences > Keyboard >
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
 # Auto hide the dock
 defaults write com.apple.dock autohide -bool true
 

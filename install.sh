@@ -26,20 +26,20 @@ $(brew --prefix)/opt/fzf/install
 
 # Install sdkman
 curl -s "https://get.sdkman.io" | bash
-source "/Users/cesaralberca/.sdkman/bin/sdkman-init.sh"
+source "~/.sdkman/bin/sdkman-init.sh"
 
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install Powerlevel9k theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+# Install Powerlevel10k theme
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 # Install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Configure profile
 dir=~/dotfiles
-files=".zshrc .gitconfig"
+files=".zshrc .gitconfig .p10k"
 
 # Create a dir to move the configuration files there
 cd $dir
