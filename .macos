@@ -1,8 +1,8 @@
 # System Preferences > Keyboard >
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 12
 
 # System Preferences > Keyboard >
-defaults write -g KeyRepeat -int 1
+defaults write -g KeyRepeat -int 2
 
 # Auto hide the dock
 defaults write com.apple.dock autohide -bool true
