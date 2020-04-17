@@ -6,8 +6,8 @@ plugins=(git npm yarn zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/python@2/bin:$PATH"
-export EDITOR="//usr/local/Cellar/micro/1.4.1/bin/micro"
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export EDITOR="/usr/local/Cellar/micro/2.0.3/bin/micro"
 
 # Aliases
 alias gl="git log --all --decorate --oneline --graph"
@@ -22,6 +22,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 alias work="cd ~/Workspace"
 alias tmp="cd ~/Tmp"
 alias typora="open -a typora"
+alias python="python3"
 
 # Functions
 gif_opt () {
@@ -61,5 +62,7 @@ export NVM_DIR="$HOME/.nvm"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# Add rbenv
-eval "$(rbenv init -)"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
