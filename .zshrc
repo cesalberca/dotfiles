@@ -34,7 +34,7 @@ gif_opt () {
 	done;
 }
 
-# Disable sharing history in iTerm2
+# Disable sharing history in iTerm2
 unsetopt inc_append_history
 unsetopt share_history
 

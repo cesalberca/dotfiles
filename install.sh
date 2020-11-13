@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install Hombrew
+# Install Hombrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle
 
@@ -14,11 +14,11 @@ curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf
 code --install-extension esbenp.prettier-vscode
 code --install-extension EditorConfig.editorconfig
 
-# Configure iTerm2 profile
+# Configure iTerm2 profile
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
-# Create hushlogin
+# Create hushlogin
 touch ~/.hushlogin
 
 # Configure fzf and install keybidings
@@ -41,7 +41,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 dir=~/dotfiles
 files=".zshrc .gitconfig .p10k.zsh"
 
-# Create a dir to move the configuration files there
+# Create a dir to move the configuration files there
 cd $dir
 
 for file in $files; do
