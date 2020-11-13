@@ -216,9 +216,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>216 406 928 394 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 535 650 492 0 0 1680 1027 </string>
+	<string>0 397 1870 630 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 1680 1027 0 0 1680 1027 </string>
+	<string>0 535 650 492 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1614,6 +1614,8 @@
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.8</string>
+		<string>3.3.11</string>
+		<string>3.3.12</string>
 		<string>3.3.3</string>
 		<string>3.3.7</string>
 		<string>3.3.9</string>
@@ -1641,7 +1643,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>572810363.97346401</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>42</integer>
+	<integer>113</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2453,12 +2455,14 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-23T21:21:04Z</date>
+	<date>2020-07-15T11:23:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
+	<false/>
+	<key>Size Changes Affect Profile</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
@@ -4720,7 +4724,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

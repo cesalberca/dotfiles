@@ -7,7 +7,7 @@ plugins=(git npm yarn zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export EDITOR="/usr/local/Cellar/micro/2.0.3/bin/micro"
+export EDITOR="/usr/local/Cellar/micro/2.0.7/bin/micro"
 
 # Aliases
 alias gl="git log --all --decorate --oneline --graph"
@@ -17,12 +17,14 @@ cd() { builtin cd "$@"; ls; }
 alias cd..="cd ../"
 alias ~="cd ~"
 alias c="clear"
+alias publicIp="curl https://ipinfo.io/ip"
 trash () { command mv "$@" ~/.Trash; }
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias work="cd ~/Workspace"
 alias tmp="cd ~/Tmp"
 alias typora="open -a typora"
 alias python="python3"
+alias webstorm="~/webstorm"
 
 # Functions
 gif_opt () {
@@ -49,9 +51,6 @@ export SDKMAN_DIR=$HOME/.sdkman
 # Source zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Source webstorm
-alias webstorm="~/webstorm"
-
 # IP
 alias ip='ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk "{print $2}"'
 
@@ -66,3 +65,5 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"

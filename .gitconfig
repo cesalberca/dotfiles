@@ -14,12 +14,6 @@
 	excludesfile = /Users/cesaralberca/.gitignore_global
 	autocrlf = input
 	ignoreCase = false
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [commit]
 	template = /Users/calberca/.stCommitMsg
 [branch "master"]
@@ -28,3 +22,6 @@
 	mergeoptions = --no-ff
 [pull]
 	ff = true
+	rebase = false
+[init]
+	defaultBranch = main
