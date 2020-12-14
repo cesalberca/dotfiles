@@ -1,7 +1,7 @@
 # dotfiles
 
 1. Download this repository and place it under `~/dotfiles`
-0. From terminal `cd` into it
-0. Run `install.sh`. If needed give run permissions with `chmod +x ./install.sh`.
-0. Restart terminal
-0. Enjoy!
+2. From terminal `cd` into it
+3. Run `install.sh`. If needed give run permissions with `chmod +x ./install.sh`.
+4. Restart terminal
+5. Enjoy!

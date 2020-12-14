@@ -16,9 +16,9 @@
 	ignoreCase = false
 [commit]
 	template = /Users/calberca/.stCommitMsg
-[branch "master"]
+[branch "main"]
 	remote = origin
-	merge = refs/heads/master
+	merge = refs/heads/main
 	mergeoptions = --no-ff
 [pull]
 	ff = true

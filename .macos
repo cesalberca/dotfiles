@@ -72,3 +72,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Use fn functions as default
 defaults write .GlobalPreferences.plist com.apple.keyboard.fnState -int 1
+
+# Disable user interface sound like screenshots
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
