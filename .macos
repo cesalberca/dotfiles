@@ -76,3 +76,7 @@ defaults write .GlobalPreferences.plist com.apple.keyboard.fnState -int 1
 # Disable user interface sound like screenshots
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 
+# Prevent apps from staying in Dock
+defaults write com.apple.dock show-recents -bool no
+defaults write com.apple.dock recent-apps -array # intentionally empty
+
