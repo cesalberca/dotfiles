@@ -52,3 +52,5 @@ source .macos
 # Create private-profile
 cd ~
 touch .private-profile
+mkdir workspace
+mkdir tmp
