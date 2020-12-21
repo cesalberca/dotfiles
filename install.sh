@@ -54,3 +54,10 @@ cd ~
 touch .private-profile
 mkdir workspace
 mkdir tmp
+
+# Login to iCloud
+mas signin cesalberca@gmail.com
+
+# Install app store's apps
+mas install 1263070803 # Lungo
+
