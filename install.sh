@@ -10,10 +10,6 @@ open -a Hammerspoon
 # Use hammerspoon configuration
 curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/cesalberca/bf06aa9c10b3cfa648284e2ffb7d09c2/raw/31d238ee7b47d06e6cb01f1a803636a2c2a300a4/init.lua
 
-# Install VSCode extensions
-code --install-extension esbenp.prettier-vscode
-code --install-extension EditorConfig.editorconfig
-
 # Configure iTerm2 profile
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
@@ -56,6 +52,3 @@ source .macos
 # Create private-profile
 cd ~
 touch .private-profile
-
-# Change default shell
-chsh -s /bin/zsh
