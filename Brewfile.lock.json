@@ -66,6 +66,12 @@
         "options": {
           "full_name": "slack"
         }
+      },
+      "google-backup-and-sync": {
+        "version": "3.53.3404.7585",
+        "options": {
+          "full_name": "google-backup-and-sync"
+        }
       }
     },
     "tap": {
