@@ -58,9 +58,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Change the default screnshots folder
 defaults write com.apple.screencapture location ~/Pictures/Screenshots
 
-# Enable dark mode using cmd + ctrl + alt + T
-sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
-
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
