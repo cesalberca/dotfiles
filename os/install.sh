@@ -44,6 +44,48 @@ function generate_brewfiles() {
   green "[OS] Generated $DESTINATION_FILE"
 }
 
+# Summary: Trust every non-official tap declared in the merged Brewfile.
+#
+# Homebrew 6.0 refuses to load formulae or casks from non-official taps unless
+# they are trusted (HOMEBREW_REQUIRE_TAP_TRUST), which makes `brew bundle` fail
+# on a fresh machine for entries like `brew "owner/tap/formula"` until someone
+# runs `brew trust` by hand. Declaring a tap in a Brewfile is already a decision
+# to trust it, so trust each one here before bundling. Idempotent, and a no-op on
+# a Homebrew without the `trust` subcommand.
+function trust_brewfile_taps() {
+  local BREWFILE="$HOME/.Brewfile"
+
+  if ! brew trust --help >/dev/null 2>&1; then
+    blue "[OS] Skip tap trust (this Homebrew has no 'trust' subcommand)"
+    return 0
+  fi
+  [ -f "$BREWFILE" ] || return 0
+
+  # Taps come from explicit `tap "owner/name"` lines and from the owner/tap
+  # prefix of fully-qualified `brew`/`cask "owner/tap/name"` entries. Short names
+  # (official taps) have no prefix and are skipped.
+  local taps
+  taps="$(
+    {
+      grep -hoE '^[[:space:]]*tap[[:space:]]+"[^"]+"' "$BREWFILE" 2>/dev/null \
+        | sed -E 's/.*"([^"]+)".*/\1/'
+      grep -hoE '^[[:space:]]*(brew|cask)[[:space:]]+"[^"/]+/[^"/]+/[^"]+"' "$BREWFILE" 2>/dev/null \
+        | sed -E 's#.*"([^"/]+/[^"/]+)/[^"]+".*#\1#'
+    } | sort -u || true
+  )"
+  [ -n "$taps" ] || return 0
+
+  blue "[OS] Trust non-official taps declared in the Brewfile"
+  local tap
+  while IFS= read -r tap; do
+    [ -n "$tap" ] || continue
+    brew tap "$tap" >/dev/null 2>&1 || true
+    if brew trust --tap "$tap" >/dev/null 2>&1; then
+      green "[OS] Trusted tap $tap"
+    fi
+  done <<<"$taps"
+}
+
 # The Brewfile handles Homebrew-based app and library installs, but there may
 # still be updates and installables in the Mac App Store. There's a nifty
 # command line interface to it that we can use to just install everything, so
@@ -82,6 +124,8 @@ if test "$(uname)" = "Darwin"; then
 
     blue "[OS] Go to $HOME directory"
     cd $HOME
+
+    trust_brewfile_taps
 
     blue "[OS] Install Brew apps defined in the Brewfile (Takes a lot of time first time to install everything)"
     brew bundle --cleanup --global
